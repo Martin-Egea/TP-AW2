@@ -1,0 +1,142 @@
+[
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "apellido": "Gómez",
+      "email": "juan@example.com",
+      "contraseña": "contraseña123"
+    },
+    {
+      "id": 2,
+      "nombre": "María",
+      "apellido": "López",
+      "email": "maria@example.com",
+      "contraseña": "maria456"
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos",
+      "apellido": "Martínez",
+      "email": "carlos@example.com",
+      "contraseña": "claveSegura"
+    },
+    {
+      "id": 4,
+      "nombre": "Laura",
+      "apellido": "Fernández",
+      "email": "laura@example.com",
+      "contraseña": "laura789"
+    },
+    {
+      "id": 5,
+      "nombre": "Pedro",
+      "apellido": "Rodríguez",
+      "email": "pedro@example.com",
+      "contraseña": "pedroPass"
+    },
+    {
+      "id": 6,
+      "nombre": "Ana",
+      "apellido": "García",
+      "email": "ana@example.com",
+      "contraseña": "ana1234"
+    },
+    {
+      "id": 7,
+      "nombre": "Miguel",
+      "apellido": "Pérez",
+      "email": "miguel@example.com",
+      "contraseña": "miguelPass"
+    },
+    {
+      "id": 8,
+      "nombre": "Sofía",
+      "apellido": "Sánchez",
+      "email": "sofia@example.com",
+      "contraseña": "sofia123"
+    },
+    {
+      "id": 9,
+      "nombre": "Daniel",
+      "apellido": "Romero",
+      "email": "daniel@example.com",
+      "contraseña": "danielPass"
+    },
+    {
+      "id": 10,
+      "nombre": "Carmen",
+      "apellido": "Díaz",
+      "email": "carmen@example.com",
+      "contraseña": "carmen567"
+    },
+    {
+      "id": 11,
+      "nombre": "Javier",
+      "apellido": "Ruiz",
+      "email": "javier@example.com",
+      "contraseña": "javierPass"
+    },
+    {
+      "id": 12,
+      "nombre": "Elena",
+      "apellido": "Torres",
+      "email": "elena@example.com",
+      "contraseña": "elenaPass"
+    },
+    {
+      "id": 13,
+      "nombre": "Diego",
+      "apellido": "Jiménez",
+      "email": "diego@example.com",
+      "contraseña": "diegoPass"
+    },
+    {
+      "id": 14,
+      "nombre": "Adriana",
+      "apellido": "Núñez",
+      "email": "adriana@example.com",
+      "contraseña": "adrianaPass"
+    },
+    {
+      "id": 15,
+      "nombre": "Pablo",
+      "apellido": "Gutiérrez",
+      "email": "pablo@example.com",
+      "contraseña": "pabloPass"
+    },
+    {
+      "id": 16,
+      "nombre": "Lucía",
+      "apellido": "Muñoz",
+      "email": "lucia@example.com",
+      "contraseña": "luciaPass"
+    },
+    {
+      "id": 17,
+      "nombre": "Alejandro",
+      "apellido": "Hernández",
+      "email": "alejandro@example.com",
+      "contraseña": "alejandroPass"
+    },
+    {
+      "id": 18,
+      "nombre": "Marta",
+      "apellido": "López",
+      "email": "marta@example.com",
+      "contraseña": "martaPass"
+    },
+    {
+      "id": 19,
+      "nombre": "Alberto",
+      "apellido": "García",
+      "email": "alberto@example.com",
+      "contraseña": "albertoPass"
+    },
+    {
+      "id": 20,
+      "nombre": "Cristina",
+      "apellido": "Martín",
+      "email": "cristina@example.com",
+      "contraseña": "cristinaPass"
+    }
+  ]
