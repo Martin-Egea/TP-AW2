@@ -51,23 +51,23 @@ router.put('/update/:userID', (req,res)=>{
     }
 })
 
-//Eliminar usuario por ID
-router.delete('/delete/:userID', (req, res)=>{
-    const user_id = req.params.userID
+//Eliminar usuario por ID **NO UTILIZAR**
+// router.delete('/delete/:userID', (req, res)=>{
+//     const user_id = req.params.userID
     
-    try{
-        const index = userData.findIndex(e => e.id == user_id)
+//     try{
+//         const index = userData.findIndex(e => e.id == user_id)
 
-        if(index != -1){
-            userData.splice(index,1)
-            writeFile('./data/usuarios.json', JSON.stringify(userData,null,2))
-            res.status(200).json('usuario eliminado')
-        }else{
-            res.status(400).json('no se encontro el usuario')
-        }
-    }catch(error){
-        res.send(500).json('Error al intentar eliminar un usuario')
-    }
-})
+//         if(index != -1){
+//             userData.splice(index,1)
+//             writeFile('./data/usuarios.json', JSON.stringify(userData,null,2))
+//             res.status(200).json('usuario eliminado')
+//         }else{
+//             res.status(400).json('no se encontro el usuario')
+//         }
+//     }catch(error){
+//         res.send(500).json('Error al intentar eliminar un usuario')
+//     }
+// })
 
 export default router

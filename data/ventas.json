@@ -1,122 +1,153 @@
 [
-    {
-      "id": 1,
-      "id_usuario": 5,
-      "fecha": "2024-05-01",
-      "total": 1499.99,
-      "direccion": "Calle Principal 123",
-      "productos": [4, 7]
-    },
-    {
-      "id": 2,
-      "id_usuario": 12,
-      "fecha": "2024-05-02",
-      "total": 799.99,
-      "direccion": "Avenida Libertad 456",
-      "productos": [10]
-    },
-    {
-      "id": 3,
-      "id_usuario": 9,
-      "fecha": "2024-05-03",
-      "total": 199.99,
-      "direccion": "Calle del Sol 789",
-      "productos": [13]
-    },
-    {
-      "id": 4,
-      "id_usuario": 3,
-      "fecha": "2024-05-04",
-      "total": 1099.99,
-      "direccion": "Calle Mayor 1011",
-      "productos": [2]
-    },
-    {
-      "id": 5,
-      "id_usuario": 8,
-      "fecha": "2024-05-05",
-      "total": 599.99,
-      "direccion": "Avenida Central 1213",
-      "productos": [3]
-    },
-    {
-      "id": 6,
-      "id_usuario": 19,
-      "fecha": "2024-05-06",
-      "total": 69.99,
-      "direccion": "Callejón de la Luna 1415",
-      "productos": [15]
-    },
-    {
-      "id": 7,
-      "id_usuario": 16,
-      "fecha": "2024-05-07",
-      "total": 499.99,
-      "direccion": "Paseo del Parque 1617",
-      "productos": [9]
-    },
-    {
-      "id": 8,
-      "id_usuario": 7,
-      "fecha": "2024-05-08",
-      "total": 379.99,
-      "direccion": "Calle del Bosque 1819",
-      "productos": [6]
-    },
-    {
-      "id": 9,
-      "id_usuario": 14,
-      "fecha": "2024-05-09",
-      "total": 999.99,
-      "direccion": "Avenida del Río 2021",
-      "productos": [19]
-    },
-    {
-      "id": 10,
-      "id_usuario": 18,
-      "fecha": "2024-05-10",
-      "total": 49.99,
-      "direccion": "Calle de la Plaza 2223",
-      "productos": [20]
-    },
-    {
-      "id": 11,
-      "id_usuario": 1,
-      "fecha": "2024-05-11",
-      "total": 199.99,
-      "direccion": "Avenida de la Estación 2425",
-      "productos": [13]
-    },
-    {
-      "id": 12,
-      "id_usuario": 20,
-      "fecha": "2024-05-12",
-      "total": 379.99,
-      "direccion": "Calle Nueva 2627",
-      "productos": [6]
-    },
-    {
-      "id": 13,
-      "id_usuario": 12,
-      "fecha": "2024-05-26",
-      "total": 899.99,
-      "direccion": "Calle del Jardín 5455",
-      "productos": [1]
-    },
-    {
-      "id": 14,
-      "id_usuario": 19,
-      "fecha": "2024-05-27",
-      "total": 999.99,
-      "direccion": "Paseo de la Fuente 5657",
-      "productos": [19, 20]
-    },
-    {
-      "id": 15,
-      "id_usuario": 9,
-      "fecha": "2024-05-28",
-      "total": 379.99,
-      "direccion": "Avenida del Parque 5859",
-      "productos": [6, 15, 2]
-    }
+  {
+    "id": 1,
+    "id_usuario": 5,
+    "fecha": "2024-05-01",
+    "total": 1499.99,
+    "direccion": "Calle Principal 123",
+    "productos": [4, 7]
+  },
+  {
+    "id": 2,
+    "id_usuario": 12,
+    "fecha": "2024-05-02",
+    "total": 799.99,
+    "direccion": "Avenida Libertad 456",
+    "productos": [
+      10
+    ]
+  },
+  {
+    "id": 3,
+    "id_usuario": 9,
+    "fecha": "2024-05-03",
+    "total": 199.99,
+    "direccion": "Calle del Sol 789",
+    "productos": [
+      13
+    ]
+  },
+  {
+    "id": 4,
+    "id_usuario": 3,
+    "fecha": "2024-05-04",
+    "total": 1099.99,
+    "direccion": "Calle Mayor 1011",
+    "productos": [
+      2
+    ]
+  },
+  {
+    "id": 5,
+    "id_usuario": 8,
+    "fecha": "2024-05-05",
+    "total": 599.99,
+    "direccion": "Avenida Central 1213",
+    "productos": [
+      3
+    ]
+  },
+  {
+    "id": 6,
+    "id_usuario": 19,
+    "fecha": "2024-05-06",
+    "total": 69.99,
+    "direccion": "Callejón de la Luna 1415",
+    "productos": [
+      15
+    ]
+  },
+  {
+    "id": 7,
+    "id_usuario": 16,
+    "fecha": "2024-05-07",
+    "total": 499.99,
+    "direccion": "Paseo del Parque 1617",
+    "productos": [
+      9
+    ]
+  },
+  {
+    "id": 8,
+    "id_usuario": 7,
+    "fecha": "2024-05-08",
+    "total": 379.99,
+    "direccion": "Calle del Bosque 1819",
+    "productos": [
+      6
+    ]
+  },
+  {
+    "id": 9,
+    "id_usuario": 14,
+    "fecha": "2024-05-09",
+    "total": 999.99,
+    "direccion": "Avenida del Río 2021",
+    "productos": [
+      19
+    ]
+  },
+  {
+    "id": 10,
+    "id_usuario": 18,
+    "fecha": "2024-05-10",
+    "total": 49.99,
+    "direccion": "Calle de la Plaza 2223",
+    "productos": [
+      20
+    ]
+  },
+  {
+    "id": 11,
+    "id_usuario": 1,
+    "fecha": "2024-05-11",
+    "total": 199.99,
+    "direccion": "Avenida de la Estación 2425",
+    "productos": [
+      13
+    ]
+  },
+  {
+    "id": 12,
+    "id_usuario": 20,
+    "fecha": "2024-05-12",
+    "total": 379.99,
+    "direccion": "Calle Nueva 2627",
+    "productos": [
+      6
+    ]
+  },
+  {
+    "id": 13,
+    "id_usuario": 12,
+    "fecha": "2024-05-26",
+    "total": 899.99,
+    "direccion": "Calle del Jardín 5455",
+    "productos": [
+      1
+    ]
+  },
+  {
+    "id": 14,
+    "id_usuario": 19,
+    "fecha": "2024-05-27",
+    "total": 999.99,
+    "direccion": "Paseo de la Fuente 5657",
+    "productos": [
+      19,
+      20
+    ]
+  },
+  {
+    "id": 15,
+    "id_usuario": 9,
+    "fecha": "2024-05-28",
+    "total": 379.99,
+    "direccion": "Avenida del Parque 5859",
+    "productos": [
+      6,
+      15,
+      2
+    ]
+  }
 ]
