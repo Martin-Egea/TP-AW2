@@ -14,9 +14,12 @@ app.listen(port, ()=>{
 })
 
 app.use(express.json())
+app.use(express.static('./client'))
 app.use('/user', userRouter)
 app.use('/product', productRouter)
 app.use('/sales', salesRouter)
+
+
 
 //const productos = JSON.parse(await readFile('./data.productos.json'))
 //const usuarios = JSON.parse(await readFile('./data/usuarios.json')) 

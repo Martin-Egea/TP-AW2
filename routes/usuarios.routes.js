@@ -11,13 +11,25 @@ router.post('/login', (req, res)=>{
     const userEmail = req.body.email
     const pass = req.body.password
 
-    const result = userData.find(e => e.email === userEmail && e.password ===pass)
+    const result = userData.find(e => e.email == userEmail && e.password ===pass)
 
-    if(result){
-        res.status(200).json(`Bienvenido: ${result.nombre}`)
-    }else{
-        res.status(400).json(`${userEmail} no se encuentra`)
-    }
+    try{
+        if(result){
+            const data = {
+                id: result.id,
+                nombre: result.nombre,
+                apellido: result.apellido,
+                email: result.email,
+                status: true                
+            }
+            console.log(data)
+            res.status(200).json(data)
+        }else{
+            res.status(400).json({status:false})
+        }
+    }catch(error){
+        console.log(error)
+    }    
 })
 
 //obtener usuario por ID
