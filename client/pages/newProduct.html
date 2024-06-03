@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <title>Agregar productos</title>
+</head>
+<body class="bg-indigo-950 h-screen ">
+
+    <header></header>
+
+    <div class="grid grid-cols-5  mx-10 gap-10 flex items-center justify-center">
+        <h1 class="text-slate-300 text-3xl font-semibold col-span-5 text-center">Listado de productos</h1>
+
+        <form class="bg-slate-700 rounded-md shadow-xl shadow-slate-950 col-span-5 md:col-span-2" id="newContact">
+            <h3 class="text-xl text-slate-300 m-5">Nuevo producto</h3>
+            <div class="grid grid-cols-2 gap-5 m-5" id="formContainer">
+                <div class="space-y-2 flex flex-col col-span-2 md:col-span-1">
+                    <label for="name" class="text-slate-400">Nombre</label>
+                    <input type="text" placeholder="Ejemplo" id="name" class="rounded-md p-2 required:border-red-500">
+                </div>
+    
+                <div class="space-y-2 flex flex-col col-span-2 md:col-span-1">
+                    <label for="precio" class="text-slate-400">Precio</label>
+                    <input type="text" placeholder="299.35" id="precio" class="rounded-md p-2 text-right required:border-red-500">
+                </div>
+
+                <div class="space-y-2 flex flex-col col-span-2">
+                    <label for="productDesc" class="text-slate-400">Descripcion</label>
+                    <input type="text" placeholder="Texto....." id="productDesc" class="rounded-md p-2 required:border-red-500">
+                </div>
+                
+                <div class="space-y-2 flex flex-col col-span-2">
+                    <label for="productImg" class="text-slate-400">URL Imagen</label>
+                    <input type="url" placeholder="https://ejemploimagen.com" id="productImg" class="rounded-md p-2 required:border-red-500">
+                </div>
+
+                <p class="text-red-500 col-span-2" id="error"></p>
+                
+                <input type="submit" class="bg-green-500 text-slate-900 font-semibold rounded-md cursor-pointer p-3 my-3 w-full hover:bg-green-600 col-span-2" value="Cargar">
+            </div>
+        </form>
+        
+        <div class="bg-slate-700 rounded-md shadow-xl shadow-slate-950 col-span-5 md:col-span-3 p-5">
+            <table class="bg-slate-200 rounded-md border-collapse table-auto w-full text-sm border-separate">
+                <thead class="text-slate-500">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Imagen</th>
+                    </tr>
+                </thead>
+                <tbody id="prodTableID" class="text-center">
+                    <tr>
+                        <td>1</td>
+                        <td>Portátil HP Pavilion</td>
+                        <td><a href="tel:johndoe@email.com">899.99</a></td>
+                        <td><a href="mailto:johndoe@email.com">Portátil HP Pavilion con pantalla táctil de 15.6 pulgadas, procesador Intel Core i5, 8 GB de RAM y 512 GB de almacenamiento SSD.</a></td>
+                        <td><a href="https://johndoe.com" target="_blank">https://example.com/lg_oled_tv.jpg</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Portátil HP Pavilion</td>
+                        <td><a href="tel:johndoe@email.com">899.99</a></td>
+                        <td><a href="mailto:johndoe@email.com">Portátil HP Pavilion con pantalla táctil de 15.6 pulgadas, procesador Intel Core i5, 8 GB de RAM y 512 GB de almacenamiento SSD.</a></td>
+                        <td><a href="https://johndoe.com" target="_blank">https://example.com/lg_oled_tv.jpg</a></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="module" src="../index.js"></script>
+    <script type="module" src="./home.controller.js"></script>
+</body>
+</html>
