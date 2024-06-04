@@ -10,8 +10,8 @@
 
     <header></header>
 
-    <div class="grid grid-cols-5  mx-10 gap-10 flex items-center justify-center">
-        <h1 class="text-slate-300 text-3xl font-semibold col-span-5 text-center">Listado de productos</h1>
+    <div class="grid grid-cols-5 mx-10 gap-10 flex items-center justify-center mt-20">
+        <h1 class="text-slate-300 text-3xl font-semibold col-span-5 text-center">Agregar nuevo producto</h1>
 
         <form class="bg-slate-700 rounded-md shadow-xl shadow-slate-950 col-span-5 md:col-span-2" id="newContact">
             <h3 class="text-xl text-slate-300 m-5">Nuevo producto</h3>
@@ -47,7 +47,7 @@
                 <thead class="text-slate-500">
                     <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">Nombre</th>
+                        <th scope="col">Producto</th>
                         <th scope="col">Precio</th>
                         <th scope="col">Descripcion</th>
                         <th scope="col">Imagen</th>
@@ -58,14 +58,14 @@
                         <td>1</td>
                         <td>Portátil HP Pavilion</td>
                         <td><a href="tel:johndoe@email.com">899.99</a></td>
-                        <td><a href="mailto:johndoe@email.com">Portátil HP Pavilion con pantalla táctil de 15.6 pulgadas, procesador Intel Core i5, 8 GB de RAM y 512 GB de almacenamiento SSD.</a></td>
+                        <td><a href="mailto:johndoe@email.com" class="line-clamp-5">Portátil HP Pavilion con pantalla táctil de 15.6 pulgadas, procesador Intel Core i5, 8 GB de RAM y 512 GB de almacenamiento SSD.</a></td>
                         <td><a href="https://johndoe.com" target="_blank">https://example.com/lg_oled_tv.jpg</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
                         <td>Portátil HP Pavilion</td>
                         <td><a href="tel:johndoe@email.com">899.99</a></td>
-                        <td><a href="mailto:johndoe@email.com">Portátil HP Pavilion con pantalla táctil de 15.6 pulgadas, procesador Intel Core i5, 8 GB de RAM y 512 GB de almacenamiento SSD.</a></td>
+                        <td><a href="mailto:johndoe@email.com" class="line-clamp-5">Portátil HP Pavilion con pantalla táctil de 15.6 pulgadas, procesador Intel Core i5, 8 GB de RAM y 512 GB de almacenamiento SSD.</a></td>
                         <td><a href="https://johndoe.com" target="_blank">https://example.com/lg_oled_tv.jpg</a></td>
                     </tr>
                     
@@ -75,6 +75,5 @@
     </div>
 
     <script type="module" src="../index.js"></script>
-    <script type="module" src="./home.controller.js"></script>
 </body>
 </html>

@@ -19,8 +19,7 @@ let subTotalProductos = document.getElementById('subTotalCart')
 const productosDeLS = getDataLS('carritoCompras')
 
 function agregarProductosAContenedor(){
-    let listaProductos = ''    
-    console.log(productosDeLS)
+    let listaProductos = ''
     productosDeLS.forEach(e => {
         listaProductos += prodCarrito(e.nombre, e.desc, e.precio)
     });
