@@ -37,11 +37,15 @@ router.get('/byId/:id', (req, res)=>{
     const id = parseInt(req.params.id)
     const result = userData.find(e => e.id === id)
 
-    if(result){
-        res.status(200).json(result)
-    }else{
-        res.status(400).json(`Usuario con el id: ${id} no se encuentra`)
-    }
+    try {
+        if(result){
+            res.status(200).json(result)
+        }else{
+            res.status(400).json(`Usuario con el id: ${id} no se encuentra`)
+        }
+    } catch (error) {
+        console.log(error)
+    }    
 })
 
 //modificar contraseña de usuario por ID

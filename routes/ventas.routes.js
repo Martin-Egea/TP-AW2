@@ -43,4 +43,30 @@ router.delete('/delete/:salesID', (req, res)=>{
     }
 })
 
+//cargar una nueva venta!
+router.post('/newSale', (req, res) => {
+    const {id,id_usuario,fecha,total,direccion,productos} = req.body
+
+    try {
+        salesData.push({id,id_usuario,fecha,total,direccion,productos})
+        writeFile('./data/ventas.json', JSON.stringify(salesData,null,2))
+        res.status(200).json({status:true})
+    } catch (error) {
+        console.log(error)
+        res.status(400).json({status:false})
+    }
+
+})
+
+//Buscar ID de la ultima venta
+router.get('/lastSaleID', (req, res) => {
+    const result = salesData.length+1    
+    try {
+        res.status(200).json(result)
+    } catch (error) {
+        constole.log(error)
+        res.status(400).json({status:false})
+    }
+})
+
 export default router

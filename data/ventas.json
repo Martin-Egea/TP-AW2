@@ -5,7 +5,10 @@
     "fecha": "2024-05-01",
     "total": 1499.99,
     "direccion": "Calle Principal 123",
-    "productos": [4, 7]
+    "productos": [
+      4,
+      7
+    ]
   },
   {
     "id": 2,
