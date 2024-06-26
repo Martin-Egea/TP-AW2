@@ -1,5 +1,5 @@
-import { getDataLS, deleteDataLS } from "../utils/localStorage.controller.js";
-import { getLastSale, newSale } from "../api/ventas.api.js";
+import { getDataLS, deleteDataLS } from "../../utils/localStorage.controller.js";
+import { getLastSale, newSale } from "../../api/ventas.api.js";
 
 const prodCarrito = (nombre, descripcion, precio, imagen )=>{
     return `

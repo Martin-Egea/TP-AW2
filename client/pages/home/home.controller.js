@@ -1,6 +1,6 @@
-import { allProduct, productById } from "../api/product.api.js";
-import { productCard } from "../components/productCard.js";
-import { setDataLS, getDataLS } from "../utils/localStorage.controller.js";
+import { allProduct, productById } from "../../api/product.api.js";
+import { productCard } from "../../components/productCard.js";
+import { setDataLS, getDataLS } from "../../utils/localStorage.controller.js";
 
 const priceButton = document.getElementById('priceSearchBtn')
 
@@ -52,7 +52,7 @@ window.addEventListener('load', async ()=>{
             Toastify({
                 text: "Producto agregado al carrito!",
                 duration: 3000,
-                destination: "./shoppingCart.html",
+                destination: "../shoppingCart/shoppingCart.html",
                 newWindow: false,
                 close: true,
                 gravity: "bottom", // `top` or `bottom`

@@ -11,7 +11,7 @@ formLogIn.addEventListener('submit', async(e)=>{
     if(res.status){
         console.log(res)
         sessionStorage.setItem('user', JSON.stringify(res))
-        window.location.href = "./pages/home.html"
+        window.location.href = "./pages/home/home.html"
     }else{
         error.textContent = "Error al loguear el usuario!"
     }

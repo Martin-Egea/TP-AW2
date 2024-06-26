@@ -22,7 +22,7 @@ router.post('/login', (req, res)=>{
                 email: result.email,
                 status: true                
             }
-            console.log(data)
+            //console.log(data)
             res.status(200).json(data)
         }else{
             res.status(400).json({status:false})
