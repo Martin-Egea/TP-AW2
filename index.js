@@ -1,17 +1,20 @@
 import express from 'express'
+import 'dotenv/config'
 
-import userRouter from './routes/usuarios.routes.js'
-import productRouter from './routes/productos.routes.js'
-import salesRouter from './routes/ventas.routes.js'
+//Nuevas Rutas para MongoDB
+import productRouter from './routes/product.routes.js';
+import salesRouter from './routes/sales.routes.js';
+import userRouter from './routes/user.routes.js';
 
 const app = express()
-const port = 3001
+app.use(express.json())
+const port = process.env.PORT
 
 app.listen(port, ()=>{
     console.log(`Servidor levantado en el puerto: ${port}`)
 })
 
-app.use(express.json())
+
 app.use(express.static('./client'))
 app.use('/user', userRouter)
 app.use('/product', productRouter)

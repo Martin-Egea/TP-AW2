@@ -11,7 +11,7 @@ window.addEventListener('load', async ()=>{
     //cargar todos los cards de productos!!
     let acuProductCards = ''
     productData.forEach(e => {
-        acuProductCards += productCard(e.id, e.nombre, e.desc, e.precio, e.imagen)
+        acuProductCards += productCard(e._id, e.nombre, e.desc, e.precio, e.imagen)
     });
     productGrid.innerHTML = acuProductCards
 
@@ -22,7 +22,7 @@ window.addEventListener('load', async ()=>{
         //filtro por precio menor que!
         productData.forEach(e => {
             if(e.precio <= inputSearch && inputSearch != ''){
-                auxCardsConFiltro += productCard(e.id, e.nombre, e.desc, e.precio, e.imagen)                
+                auxCardsConFiltro += productCard(e._id, e.nombre, e.desc, e.precio, e.imagen)                
             }              
         });        
         //si no encuentra nada se iguala a la lista de productos completa!
