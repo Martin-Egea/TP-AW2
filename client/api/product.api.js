@@ -1,11 +1,11 @@
 import { API } from "./api.js";
 
 //crea un nuevo producto
-export const newProduct = async(newProductData)=>{
+export const newProduct = async(nombre, desc, precio, imagen)=>{
     try {
         const res = await fetch(`${API}/product/newProduct`,{
             method: 'POST',
-            body: JSON.stringify(newProductData),
+            body: JSON.stringify({nombre, desc, precio, imagen}),
             headers:{
                 'Content-Type': 'application/json'
             }

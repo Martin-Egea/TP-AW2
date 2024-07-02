@@ -3,8 +3,10 @@ import { newUser, findAll, userLogin } from "../db/actions/user.actions.js";
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import 'dotenv/config';
+import { verifyToken, decodeToken } from "../middleware/middleware.js";
 
 const router = Router()
+const secret = process.env.SECRET
 
 //Traer a todos los usuarios
 router.get('/all', async(req,res)=>{
@@ -18,18 +20,19 @@ router.get('/all', async(req,res)=>{
 
 //Crear nuevo usuario
 router.post('/newUser', async(req,res)=>{
-    const {nombre, apellido, email, password} = req.body    
+    const {nombre, apellido, email, password, roll} = req.body    
 
     try {
         const hashedPass = bcrypt.hashSync(password, 8)
 
-        const result = await newUser({nombre, apellido, email, password:hashedPass})        
+        const result = await newUser({nombre, apellido, email, password:hashedPass, roll})     
         res.status(200).json(result)
     } catch (error) {
         res.status(400).json()
     }
 })
 
+//logueo de usuario
 router.post('/login', async(req,res)=>{
     const email = req.body.email
     const pass = req.body.pass
@@ -46,12 +49,20 @@ router.post('/login', async(req,res)=>{
             return res.status(401).send({status:false})
         }
 
-        const token = jwt.sign({...result}, process.env.SECRET, {expiresIn: 86400} )
+        const token = jwt.sign({...result}, secret, {expiresIn: 86400} )
 
         res.status(200).json(token)
     } catch (error) {
         res.status(400).json()
     }
+})
+
+//decodificar token JWT
+router.post('/decodeToken',async (req,res)=>{
+    const token = req.body.token
+    
+    const result = await decodeToken(token.replace(/^"|"$/g, ''))
+    res.status(200).json(result)
 })
 
 export default router

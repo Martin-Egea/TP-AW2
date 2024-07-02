@@ -7,6 +7,20 @@ const priceButton = document.getElementById('priceSearchBtn')
 window.addEventListener('load', async ()=>{
     const productGrid = document.getElementById('productGrid')
     const productData = await allProduct()
+    Toastify({
+        text: "Bienvenido al sistema!",
+        duration: 3000,
+        destination: "",
+        newWindow: false,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #8044C1, #0054D6)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
 
     //cargar todos los cards de productos!!
     let acuProductCards = ''
@@ -27,13 +41,27 @@ window.addEventListener('load', async ()=>{
         });        
         //si no encuentra nada se iguala a la lista de productos completa!
         if(auxCardsConFiltro == ''){
-            window.alert('No se encontraron productos!')
+            Toastify({
+                text: "¡No se encontraron productos!",
+                duration: 3000,
+                destination: "",
+                newWindow: false,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "left", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                  background: "linear-gradient(to right, #A24FFF, #7E4DB4)",
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
             auxCardsConFiltro = acuProductCards
         }
         productGrid.innerHTML = auxCardsConFiltro
+        
     })
 
-    const addTuCartButtons = document.querySelectorAll('.addToCartButton')
+    let addTuCartButtons = document.querySelectorAll('.addToCartButton')
 
     //Cargar producto al LocalStorage para luego usarlo en el carrito!!
     let itemsLS = getDataLS('carritoCompras')
@@ -41,7 +69,7 @@ window.addEventListener('load', async ()=>{
     addTuCartButtons.forEach(button =>{
         button.addEventListener('click', async (e)=>{
             const ButtonID = e.currentTarget.id
-
+            
             //hago la petición del producto por ID y la agrego al carrito de compras
             const producto = await productById(ButtonID)  
             
@@ -50,7 +78,7 @@ window.addEventListener('load', async ()=>{
 
             //Notificación de API de agregado al carrito
             Toastify({
-                text: "Producto agregado al carrito!",
+                text: "¡Producto agregado al carrito!",
                 duration: 3000,
                 destination: "../shoppingCart/shoppingCart.html",
                 newWindow: false,

@@ -6,27 +6,30 @@
     <script src="https://cdn.tailwindcss.com"></script> 
     <title>AW2-Backend</title>
 </head>
-<body class="bg-indigo-950 h-screen flex items-center justify-center">
+<body class=" h-screen flex items-center justify-center bg-gradient-to-br from-sky-900 via-blue-900 to-purple-900">
+    
     
     <!--Formulario de Login-->
     <form class="bg-slate-700 flex flex-col items-center justify-center rounded-md shadow-xl shadow-slate-950" id="logInForm">
         <div class="border rounded-t flex w-full items-center justify-center pb-3">
-            <h3 class="text-xl text-slate-300 mt-2">LogIn</h3>
+            <h3 class="text-xl text-slate-200 mt-2">LogIn</h3>
         </div>
         <div class="flex flex-col space-y-5 m-5 mx-10">
             <div class="space-y-2 flex flex-col">
                 <label for="email" class="text-slate-400">Email</label>
-                <input type="text" placeholder="ejemplo@gmail.com" id="email" class="rounded-md p-2">
+                <input type="text" placeholder="ejemplo@gmail.com" id="email" class="rounded-md p-2" required>
             </div>
 
             <div class="space-y-2 flex flex-col">
                 <label for="pass" class="text-slate-400">Contraseña</label>
-                <input type="password" placeholder="Contraseña" id="pass" class="rounded-md p-2">
+                <input type="password" placeholder="Contraseña" id="pass" class="rounded-md p-2" required>
             </div>
+            <a class="text-white text-right" href="./pages/register/register.html">Registrarse</a>
             <p class="text-red-500" id="error"></p>
             <input type="submit" class="rounded bg-blue-400 text-blue-900 px-4 py-2 font-semibold hover:bg-blue-300 active:scale-95 transition-all" value="Ingresar">
         </div>
     </form>
+    <p class="text-xl text-slate-200 mx-10">Email: admin <br> Contraseña: 123</p>
 
     <script type="module" src="./login.controller.js"></script>
 </body>

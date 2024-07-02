@@ -22,3 +22,13 @@ export const findAll = async()=>{
         console.log(error)
     }
 }
+
+export const findById = async(id)=>{
+    try {
+        await connectToDatabase()
+        const res = await Product.findById(id)
+        return JSON.parse(JSON.stringify(res))
+    } catch (error) {
+        console.log(error)
+    }
+}
