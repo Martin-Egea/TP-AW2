@@ -3,11 +3,6 @@ import { newSale } from "../../api/ventas.api.js";
 import { prodCarrito } from "../../components/shoppingCartLst.js";
 import { decodeToken } from "../../api/login.api.js";
 
-const fechaActual = new Date();
-let año = fechaActual.getFullYear();
-let mes = (fechaActual.getMonth() + 1).toString().padStart(2, '0'); // Los meses en JavaScript son de 0-11, por eso se suma 1
-let día = fechaActual.getDate().toString().padStart(2, '0'); // Y padStart para asegurar que siempre tenga 2 dígitos
-
 let contenedorProductos = document.getElementById('prodCartContainer')
 let totalProductos = document.getElementById('totalCart')
 let subTotalProductos = document.getElementById('subTotalCart')
