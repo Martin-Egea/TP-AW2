@@ -18,7 +18,7 @@ const BotonConfirmarCompra = document.getElementById('confirmButton')
 function agregarProductosAContenedor(){
     let listaProductos = ''
     productosDeLS.forEach(e => {
-        listaProductos += prodCarrito(e.nombre, e.desc, e.precio)
+        listaProductos += prodCarrito(e.nombre, e.desc, e.precio, e.imagen)
     });
     return listaProductos
 }
