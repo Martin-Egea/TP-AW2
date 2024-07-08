@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <title>Información de ventas</title>
+</head>
+<body class="bg-gradient-to-r from-purple-900 via-blue-900 to-purple-900 h-screen">
+
+    <header></header>
+
+    <div class="max-w-2xl mx-auto p-6 bg-white shadow-lg shadow-slate-950 rounded-lg mt-20">
+        <h1 class="text-2xl font-bold mb-4">Información de Ventas</h1>
+        
+        <div id="infoUserSales" class="grid grid-cols-1 md:grid-cols-2">
+            
+            <div class="mb-4">
+                <h2 class="text-lg font-semibold">Dirección</h2><p>Av. San Martín</p>
+            </div>
+            <div class="mb-4">
+                <h2 class="text-lg font-semibold">Ciudad</h2><p>Villa Dolores</p>
+            </div>
+            <div class="mb-4">
+                <h2 class="text-lg font-semibold">País</h2><p>Argentina</p>
+            </div>
+            <div class="mb-4">
+                <h2 class="text-lg font-semibold">Provincia</h2><p>Cordoba</p>
+            </div>
+            <div class="mb-4">
+                <h2 class="text-lg font-semibold">Código Postal</h2><p>5870</p>
+            </div>
+            <div class="mb-4">
+                <h2 class="text-lg font-semibold">Teléfono</h2><p>3544404040</p>
+            </div>
+            <div class="mb-4 md:col-span-2">
+                <h2 class="text-lg font-semibold">Productos</h2>                
+                <div class="flex items-center mb-4">
+                    <img class="w-16 h-16 object-cover mr-4" src="https://via.placeholder.com/64">
+                    <div>
+                        <h3 class="text-lg font-medium">Producto 1</h3>
+                        <p class="text-gray-600">Descripcion</p>
+                        <p class="text-gray-900">$32.00</p>
+                    </div>
+                </div>      
+            </div>
+            <div class="mb-4">
+                <h2 class="text-lg font-semibold">Fecha de Creación</h2>
+                <p>2024-07-01T23:26:30.093+00:00</p>
+            </div>
+            <div class="mb-4">
+                <h2 class="text-lg font-semibold">Última Actualización</h2>
+                <p>2024-07-01T23:26:30.093+00:00</p>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script type="module" src="../../index.js"></script>
+    <script type="module" src="./userSales.controller.js"></script>
+</body>
+</html>

@@ -29,6 +29,7 @@ export const navbarComponent = `
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                   <a href="${API}/pages/home/home.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Lista de Productos</a>
                   <a href="${API}/pages/shoppingCart/shoppingCart.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Carrito de compras</a>
+                  <a href="${API}/pages/userSales/userSales.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Compras Realizadas</a>
                   <a href="${API}/pages/newProduct/newProduct.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Agregar nuevo Producto</a>
                 </div>
               </div>
@@ -42,6 +43,7 @@ export const navbarComponent = `
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a href="${API}/pages/home/home.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Lista de Productos</a>
             <a href="${API}/pages/shoppingCart/shoppingCart.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Carrito de compras</a>
+            <a href="${API}/pages/userSales/userSales.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Compras Realizadas</a>
             <a href="${API}/pages/newProduct/newProduct.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Agregar nuevo Producto</a>
           </div>
         </div>
