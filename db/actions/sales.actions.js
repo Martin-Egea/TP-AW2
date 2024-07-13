@@ -20,3 +20,23 @@ export const findAll = async()=>{
         console.log(error)
     }
 }
+
+export const findById = async(id)=>{
+    try {
+        await connectToDatabase()
+        const res = await Sale.findById(id).populate({path:"usuario", select:"nombre apellido email"}).populate({path:"productos"})
+        return JSON.parse(JSON.stringify(res))
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export const findByUserId = async(id)=>{
+    try {
+        await connectToDatabase()
+        const res = await Sale.find({usuario:id}).populate({path:"productos"})
+        return JSON.parse(JSON.stringify(res))
+    } catch (error) {
+        console.log(error)
+    }
+}
