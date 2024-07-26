@@ -85,7 +85,7 @@ window.addEventListener('load', ()=>{
         
     })
 
-    tableContainer.className += " animate-fade-up"
+    tableContainer.className += " animate-fade-left"
     //cambiar la barra de navegación activa
     const activePage = document.getElementById('navNewProduct')
     const activePage2 = document.getElementById('navNewProduct2')
