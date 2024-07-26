@@ -3,10 +3,13 @@ import { productCard } from "../../components/productCard.js";
 import { setDataLS, getDataLS } from "../../utils/localStorage.controller.js";
 
 const priceButton = document.getElementById('priceSearchBtn')
-
-window.addEventListener('load', async ()=>{
+window.addEventListener('load', async ()=>{    
+    
+    //Cargar API de productos
     const productGrid = document.getElementById('productGrid')
     const productData = await allProduct()
+    
+    /* 
     Toastify({
         text: "Bienvenido al sistema!",
         duration: 3000,
@@ -14,13 +17,14 @@ window.addEventListener('load', async ()=>{
         newWindow: false,
         close: true,
         gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
+        position: "left", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
           background: "linear-gradient(to right, #8044C1, #0054D6)",
         },
         onClick: function(){} // Callback after click
       }).showToast();
+    */
 
     //cargar todos los cards de productos!!
     let acuProductCards = ''
@@ -94,4 +98,9 @@ window.addEventListener('load', async ()=>{
         })
     })
 
+    //cambiar la barra de navegación activa
+    const activePage = document.getElementById('navProductList')
+    const activePage2 = document.getElementById('navProductList2')
+    activePage.className = 'rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white'
+    activePage2.className = 'block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white'
 })

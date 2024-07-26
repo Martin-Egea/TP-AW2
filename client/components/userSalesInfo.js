@@ -1,9 +1,9 @@
 
-export const userSalesInfoComponent = (direccion, ciudad, pais, provincia, codPostal, telefono, productos, createdAt, updatedAt)=>{
+export const userSalesInfoComponent = (nVenta, direccion, ciudad, pais, provincia, codPostal, telefono, productos, createdAt, updatedAt)=>{
     return `
         <div id="infoUserSales">
             <div class="max-w-2xl mx-5 md:mx-auto p-6 bg-white shadow-lg shadow-slate-950 rounded-lg mt-10">
-                <h2 class="text-2xl font-bold mb-4">Información de Venta</h2> 
+                <h2 class="text-2xl font-bold mb-4">Información de venta Nº: ${nVenta}</h2> 
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     
                     <div class="mb-4">

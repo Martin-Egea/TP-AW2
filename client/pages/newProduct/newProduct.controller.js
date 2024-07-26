@@ -83,6 +83,11 @@ window.addEventListener('load', ()=>{
         
     })
 
+    //cambiar la barra de navegación activa
+    const activePage = document.getElementById('navNewProduct')
+    const activePage2 = document.getElementById('navNewProduct2')
+    activePage.className = 'rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white'
+    activePage2.className = 'block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white'
 })
 
 function limpiarCampos(){

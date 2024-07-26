@@ -7,7 +7,7 @@ export const productCard = (id,nombre,desc,precio,imagen)=>{
             <div class="rounded-xl overflow-hidden">
                 <img src="${imagen}" alt="">
             </div>
-            <h5 class="text-2xl md:text-3xl font-medium mt-3">${nombre}</h5>
+            <h5 class="text-sky-200 text-2xl md:text-3xl font-medium mt-3">${nombre}</h5>
             <p class="text-slate-200 text-lg mt-3">${desc}</p>
             <div class="flex-grow"></div>
             <span class="text-3xl text-right font-bold text-gray-950 dark:text-white">$${precio}</span>            
