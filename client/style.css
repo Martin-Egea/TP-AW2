@@ -822,6 +822,14 @@ video {
   height: 100vh;
 }
 
+.max-h-80 {
+  max-height: 20rem;
+}
+
+.min-h-80 {
+  min-height: 20rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -852,6 +860,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.min-w-64 {
+  min-width: 16rem;
 }
 
 .max-w-2xl {
@@ -1146,6 +1158,11 @@ video {
 
 .to-purple-900 {
   --tw-gradient-to: #581c87 var(--tw-gradient-to-position);
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
