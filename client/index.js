@@ -22,7 +22,7 @@ window.addEventListener('load', ()=>{
     let signOutBtn = document.getElementById('user-menu-item-1')
     signOutBtn.addEventListener('click', ()=>{
         sessionStorage.clear()
-    })
+    })    
     /* --Footer-- */
     footerContainer.innerHTML = footerComponent
 })

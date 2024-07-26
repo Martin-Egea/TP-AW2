@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { newUser, findAll, userLogin } from "../db/actions/user.actions.js";
+import { newUser, findAll, userLogin, updateUserById } from "../db/actions/user.actions.js";
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import 'dotenv/config';
@@ -63,6 +63,20 @@ router.post('/decodeToken',async (req,res)=>{
     
     const result = await decodeToken(token.replace(/^"|"$/g, ''))
     res.status(200).json(result)
+})
+
+//actualizar usuario
+router.patch('/updateUser/:id', async(req,res)=>{
+    const id = req.params.id
+    const {nombre, apellido, email} = req.body
+
+    try {
+        const result = await updateUserById(id, {nombre, apellido, email})
+        res.status(200).json(result)
+        
+    } catch (error) {
+        res.status(400).json()
+    }
 })
 
 export default router

@@ -28,7 +28,7 @@ export const footerComponent = `
             <hr class="my-8 border-gray-600">
             <div class="flex flex-wrap items-center justify-center md:justify-between">
                 <div class="w-full md:w-auto text-center mb-4 md:mb-0">
-                    <p> 2024 Realizado por Martin Egea acompañado por el profesor Angel Magaquian.</p>
+                    <p> 2024. Realizado por Martin Egea y acompañado por el profesor Angel Magaquian.</p>
                 </div>
                 <div class="w-full md:w-auto text-center">
                     <ul class="list-none flex justify-center md:justify-end space-x-4">

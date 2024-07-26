@@ -2,7 +2,6 @@ import { connectToDatabase } from "../connection.js";
 import User from "../schemas/user.schema.js";
 
 export const newUser = async({nombre, apellido, email, password, roll}) =>{
-
     try {
         await connectToDatabase()
         const res = await User.create({nombre, apellido, email, password, roll})   
@@ -27,6 +26,16 @@ export const userLogin = async(email)=>{
     try {
         await connectToDatabase()
         const res = await User.findOne({ email })
+        return JSON.parse(JSON.stringify(res))
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export const updateUserById = async(id, {nombre, apellido, email})=>{
+    try {
+        await connectToDatabase()
+        const res = await User.findByIdAndUpdate(id, {nombre, apellido, email})
         return JSON.parse(JSON.stringify(res))
     } catch (error) {
         console.log(error)
