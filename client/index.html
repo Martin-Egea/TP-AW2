@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
     <title>AW2-Backend</title>
 </head>
-<body class=" h-screen flex items-center justify-center bg-gradient-to-r from-purple-900 via-blue-900 to-purple-900">
-    
-    
+<body class=" h-screen flex items-center justify-center bg-gradient-to-r from-purple-900 via-blue-900 to-purple-900">      
+      
     <!--Formulario de Login-->
-    <form class="bg-slate-700 flex flex-col items-center justify-center rounded-md shadow-xl shadow-slate-950" id="logInForm">
+    <form class="bg-slate-700 flex flex-col items-center justify-center rounded-md shadow-xl shadow-slate-950 animate-fade-up" id="logInForm">
         <div class="border rounded-t flex w-full items-center justify-center pb-3">
             <h3 class="text-xl text-slate-200 mt-2">LogIn</h3>
         </div>
@@ -29,7 +28,7 @@
             <input type="submit" class="rounded bg-blue-400 text-blue-900 px-4 py-2 font-semibold hover:bg-blue-300 active:scale-95 transition-all" value="Ingresar">
         </div>
     </form>
-    <p class="text-xl text-slate-200 mx-10">Email: admin <br> Contraseña: 123</p>
+    <p class="text-xl text-slate-200 mx-10 animate-fade-up">Email: admin <br> Contraseña: 123</p>
 
     <script type="module" src="./login.controller.js"></script>
 </body>

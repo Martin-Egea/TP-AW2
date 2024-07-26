@@ -4,10 +4,12 @@ import { decodeToken } from "../../api/login.api.js";
 
 const BtnCargar = document.getElementById('btnCargar')
 let listaDeNuevosProductos = document.getElementById('prodTableID')
+const tableContainer = document.getElementById('tableContainer')
 
 window.addEventListener('load', ()=>{
     listaDeNuevosProductos.innerHTML = ''
     let numero = 1;
+    
 
     BtnCargar.addEventListener('click', async(e)=>{
         e.preventDefault()
@@ -29,7 +31,7 @@ window.addEventListener('load', ()=>{
                 limpiarCampos()            
                 let ultimoProducto = newProductList(numero, nombre, desc, precio, imagen)            
                 listaDeNuevosProductos.innerHTML += ultimoProducto
-                numero++ 
+                numero++                 
                 
                 Toastify({
                     text: "¡Nuevo producto agregado!",
@@ -83,6 +85,7 @@ window.addEventListener('load', ()=>{
         
     })
 
+    tableContainer.className += " animate-fade-up"
     //cambiar la barra de navegación activa
     const activePage = document.getElementById('navNewProduct')
     const activePage2 = document.getElementById('navNewProduct2')

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script> 
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Agregar productos</title>
@@ -13,9 +13,9 @@
     <header></header>    
     
 
-    <div class="grid grid-cols-5 mx-10 gap-10 flex items-center justify-center my-40">       
+    <div class="grid grid-cols-5 mx-10 gap-10 items-center justify-center my-40">       
 
-        <form class="bg-slate-700 rounded-md shadow-xl shadow-slate-950 col-span-5 md:col-span-2" id="newContact">
+        <form class="bg-slate-700 rounded-md shadow-xl shadow-slate-950 col-span-5 md:col-span-2 animate-fade-up" id="newContact">
             <h3 class="text-xl text-slate-300 m-5">Nuevo producto</h3>
             <div class="grid grid-cols-2 gap-5 m-5" id="formContainer">
                 <div class="space-y-2 flex flex-col col-span-2 md:col-span-1">
@@ -44,9 +44,9 @@
             </div>
         </form>        
         
-        <div class="bg-slate-700 rounded-md shadow-xl shadow-slate-950 col-span-5 md:col-span-3 p-5"> 
+        <div id="tableContainer" class="bg-slate-700 rounded-md shadow-xl shadow-slate-950 col-span-5 md:col-span-3 p-5"> 
             <h5 class="text-slate-200 text-3xl font-semibold col-span-5 text-center">Ultimos productos agregados.</h5>           
-            <table class="bg-slate-200 rounded-md border-collapse table-auto w-full text-sm border-separate">
+            <table class="bg-slate-200 rounded-md border-collapse table-auto w-full text-sm">
                 <thead class="text-slate-500">
                     <tr>
                         <th scope="col">Nº</th>

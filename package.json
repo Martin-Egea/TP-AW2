@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch index.js"
+    "dev": "node --watch index.js",
+    "buildcss": "npx tailwindcss -i ./src/input.css -o ./client/style.css --watch"
   },
   "keywords": [],
   "author": "Ángel Martín Egea",
@@ -16,6 +17,10 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.5.1"
+    "mongoose": "^8.5.1",
+    "tailwindcss-animated": "^1.1.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
   }
 }

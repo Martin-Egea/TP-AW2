@@ -2,7 +2,7 @@
 
 export const productCard = (id,nombre,desc,precio,imagen)=>{
     return `
-    <div class="bg-gray-700 max-w-sm rounded overflow-hidden shadow-xl shadow-slate-950 my-3 mx-2">
+    <div class="bg-gray-700 max-w-sm rounded overflow-hidden shadow-xl shadow-slate-950 my-3 mx-2 animate-fade-up">
         <div class="p-5 flex flex-col h-full">
             <div class="rounded-xl overflow-hidden">
                 <img src="${imagen}" alt="">
